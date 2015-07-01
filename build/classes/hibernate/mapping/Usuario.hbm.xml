@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/06/2015 01:51:43 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="bean.Usuario" table="usuario" catalog="KURADENT">
+        <id name="idUsuario" type="long">
+            <column name="ID_USUARIO" />
+            <generator class="assigned" />
+        </id>
+        <property name="usuario" type="string">
+            <column name="USUARIO" />
+        </property>
+        <property name="contrasenia" type="string">
+            <column name="CONTRASENIA" />
+        </property>
+        <property name="sesion" type="java.lang.Long">
+            <column name="SESION" />
+        </property>
+        <property name="estado" type="java.lang.Long">
+            <column name="ESTADO" />
+        </property>
+        <property name="intentos" type="java.lang.Long">
+            <column name="INTENTOS" />
+        </property>
+        <property name="ultimoIntento" type="date">
+            <column name="ULTIMO_INTENTO" length="0" />
+        </property>
+    </class>
+</hibernate-mapping>

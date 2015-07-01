@@ -1,0 +1,106 @@
+body
+{	
+	background: #EFEFEF;
+	color: #4C4C4C;
+	font-family: "PT Sans", Arial;
+	font-size: 16px;
+	margin: 0;
+}
+footer
+{
+	background:#075a99;
+	color:white;
+	margin-top: 30px;
+	padding: 20px;
+	text-align:center;
+}
+h1
+{
+	color: aqua;
+	font-size: 60px;	
+	text-align:center;
+}
+header
+{
+	background: #075a99;
+	color: white;
+	display:inline-block;
+	padding: 40px;
+	width:100%;	
+}
+header input
+{
+	background: #DD4F24;
+	border: 1px #DD4F24 solid;
+	border-radius:5px;
+	color: white;
+	display:inline-block;	
+	font-size:20px;
+	margin: 0 0 0 16px;
+	padding:0;
+	width: 7.5rem;
+	text-align: center;
+	position:relative;
+	top:-0.7rem;
+	
+}
+header h2
+{
+	display:inline-block;
+	font-size: 30px;
+	margin: 0 20px 0 0;
+	padding: 0 0 0 30px;
+	width:30%;		
+}
+header h3
+{
+	display:inline-block;
+	margin: 0 1rem 0 30rem;
+	width:8rem;
+	font-style:italic;		
+}
+section figure
+{
+	display:inline-block;
+}
+section  figure img
+{
+	display:inline-block;
+	height:8rem;
+	vertical-align:bottom;
+	margin:0 0.5rem;
+	box-shadow: 2px 2px 5px #999999;
+}
+section table
+{
+	display:inline-block;	
+	vertical-align:bottom;
+	
+	margin:0 0 0 25rem;	
+}
+tr:nth-of-type(odd) {
+    background: #AAA;
+}
+tr:nth-of-type(even) {
+    background: #EEE;
+}
+section article label
+{	
+	margin:0 1rem 0 25rem;	
+}
+section article #calendar,
+section article label,
+section article input
+{
+	
+	display:inline-block;	
+}
+section article input
+{
+	margin:0 1rem 0 53.2rem;
+}
+.span1:after
+{
+	content: "\e601";
+	
+}

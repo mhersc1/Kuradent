@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:jsf="http://xmlns.jcp.org/jsf"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
+		xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+		xmlns:p="http://primefaces.org/ui"		
+	>
+<head	jsf:id="head">
+	<meta charset="UTF-8"></meta>
+	<title>KURADENT - Clinica Odontológica</title>
+	<link 	rel="stylesheet" href="../resources/css/normalize.css" />
+	<link 	href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+	<link 	rel="stylesheet" href="../resources/css/style_citas.css" />
+	<link 	rel="stylesheet" href="../resources/css/style.css" /> 
+</head>
+<body	jsf:id="body">
+	<f:facet name="last">		
+		<h:outputStylesheet library="css" name="primefaces/style_ingresopaciente.css" />		
+	</f:facet>
+	<header>
+		<h2>Kuradent Clínica Odontológica</h2>
+		<h3>Bienvenido, Oscar Ulises</h3>
+		<input type="submit"	value="Cerrar Sesión"></input>
+	</header>
+	<h1	id="titulo_principal">K U R A D E N T</h1>
+	<section>
+	<h:form>	
+	<p:selectOneButton	id="menuButton"	styleClass="unputon">
+		<f:selectItem itemLabel="Historía Clínica"	itemValue="HC" 	id="puton1"/>
+		<f:selectItem itemLabel="Citas"				itemValue="CTS"	id="puton2"/>
+		<f:selectItem itemLabel="Cuentas Paciente"	itemValue="CP"	id="puton3"/>
+		<f:selectItem itemLabel="Productos"			itemValue="PDS"	id="puton4"/>
+	</p:selectOneButton>
+	</h:form>
+	</section>
+	<section>
+		<article>
+		<label	for="calendar">Seleccionar Fecha: </label>
+		<p:calendar	id="calendar"	showOn="button">
+		</p:calendar>
+		</article>
+		<article>
+		<table border="1" cellpadding="8px"	cellspacing="8px">
+			<caption>Citas - Semana 2 Abril del 2015</caption>
+			<thead>
+				<tr>
+					<td><strong>Hora </strong></td>
+					<td><strong>Lunes </strong></td>
+					<td><strong>Martes </strong></td>
+					<td><strong>Miercoles </strong></td>
+					<td><strong>Jueves </strong></td>
+					<td><strong>Viernes </strong></td>
+					<td><strong>Sabado </strong></td>					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>10:00 - 11:00 </strong></td>
+					<td><span	class="span1"></span></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+				</tr>
+				<tr>
+					<td><strong>11:00 - 12:00 </strong></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+				</tr>
+				<tr>
+					<td><strong>12:00 - 1:00 </strong></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+				</tr>
+				<tr>
+					<td><strong>4:00 - 5:00 </strong></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+				</tr>
+				<tr>
+					<td><strong>5:00 - 6:00 </strong></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+					<td><img></img></td>
+				</tr>
+			</tbody>
+		</table>
+		</article>
+		<article>		
+			<input	type="submit"	value="Registrar"></input>
+		</article>
+	</section>
+	<footer>©Kuradent - Todos los Derechos Reservados</footer>		 
+</body>
+</html>

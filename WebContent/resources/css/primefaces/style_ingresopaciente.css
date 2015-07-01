@@ -1,0 +1,14 @@
+form
+{
+	display:inline-block;
+	position:relative;
+	left:25rem;	
+	margin:1rem 0 1rem 0;
+}
+section #menuButton
+{
+	display:inline-block;
+	margin: 1rem 0 1rem 22rem;	
+	background:blue;
+	color:white;	
+}
