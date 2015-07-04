@@ -53,6 +53,10 @@ public class UsuarioMB {
 			return "";
 		}
 	}
+	public void registrarCita()
+	{
+		message.showMessage(6);
+	}
 	public UsuarioForm getUsuario() {
 		return usuario;
 	}

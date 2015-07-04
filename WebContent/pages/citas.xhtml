@@ -36,10 +36,28 @@
 	</section>
 	<section>
 		<article>
-		<label	for="calendar">Seleccionar Fecha: </label>
-		<p:calendar	id="calendar"	showOn="button">
-		</p:calendar>
+		<p:outputLabel id="calendar1"	value="Seleccionar Semana: "	></p:outputLabel>	
+		<p:selectOneMenu>
+			<f:selectItem itemLabel="Semana 1"	itemValue="1"/>
+			<f:selectItem itemLabel="Semana 2"	itemValue="2"/>
+			<f:selectItem itemLabel="Semana 3"	itemValue="3"/>
+			<f:selectItem itemLabel="Semana 4"	itemValue="4"/>
+			<f:selectItem itemLabel="Semana 5"	itemValue="5"/>
+			<f:selectItem itemLabel="Semana 6"	itemValue="6"/>
+			<f:selectItem itemLabel="Semana 7"	itemValue="7"/>
+		</p:selectOneMenu>
+		<p:outputLabel id="calendar2"	value="Seleccionar Mes: "	></p:outputLabel>
+		<p:selectOneMenu>
+			<f:selectItem itemLabel="Abril"	itemValue="1"/>
+			<f:selectItem itemLabel="Mayo"	itemValue="2"/>
+			<f:selectItem itemLabel="Junio"	itemValue="3"/>
+			<f:selectItem itemLabel="Julio"	itemValue="4"/>
+			<f:selectItem itemLabel="Septiembre"	itemValue="5"/>
+			<f:selectItem itemLabel="Octubre"	itemValue="6"/>
+			<f:selectItem itemLabel="Diciembre"	itemValue="7"/>		
+		</p:selectOneMenu>		
 		</article>
+		<p:spacer	></p:spacer>
 		<article>
 		<table border="1" cellpadding="8px"	cellspacing="8px">
 			<caption>Citas - Semana 2 Abril del 2015</caption>
@@ -55,58 +73,92 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr>					
 					<td><strong>10:00 - 11:00 </strong></td>
-					<td><span	class="span1"></span></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
 				</tr>
 				<tr>
 					<td><strong>11:00 - 12:00 </strong></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="true" disabled="true"/></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
 				</tr>
 				<tr>
 					<td><strong>12:00 - 1:00 </strong></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
 				</tr>
 				<tr>
 					<td><strong>4:00 - 5:00 </strong></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="true" disabled="true"/></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
 				</tr>
 				<tr>
 					<td><strong>5:00 - 6:00 </strong></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
-					<td><img></img></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
+					<td	style="text-align:center"><p:selectBooleanCheckbox	value="false" /></td>
 				</tr>
 			</tbody>
 		</table>
 		</article>
-		<article>		
-			<input	type="submit"	value="Registrar"></input>
+		<article>
+				<p:commandButton	id="registrar"	value="Registrar"	onclick="PF('registroPanel').show();"></p:commandButton>
 		</article>
 	</section>
-	<footer>©Kuradent - Todos los Derechos Reservados</footer>		 
+	<footer>©Kuradent - Todos los Derechos Reservados</footer>	
+		<p:dialog	id="registro"	widgetVar="registroPanel"	modal="true"	header="Registro de Cita"	position="center">
+			<h:form>
+			<p:growl id="msgs" showDetail="true"  widgetVar="msgs"	autoUpdate="true"/>
+			</h:form>
+			<h:panelGrid	border="1"	columns="2"	cellspacing="1"	cellpadding="10">
+					<f:facet name="header">
+						Registrar Citas - Paciente
+					</f:facet>										
+					<h:outputText value="Fecha: " style="font-weight:bold"/>
+					<h:outputText value="Jueves 7, Abril 2015" />
+										
+					<h:outputText value="Horario de Cita: " style="font-weight:bold"/>
+					<h:outputText value="11:00 - 12:00 p.m" />
+					
+					<h:outputText value="Odontologos disponibles: " style="font-weight:bold"/>
+					<p:selectOneMenu	style="display:block; text-align:center">
+						<f:selectItem itemValue="GA"	itemLabel="Gallegos Huamaní Joe"/>
+						<f:selectItem itemValue="SC"	itemLabel="Salas Calderon Omar"/>
+						<f:selectItem itemValue="AQ"	itemLabel="Amao Quijandría Melissa"/>
+						<f:selectItem itemValue="EV"	itemLabel="Espinoza Vasquez Judith"/>
+					</p:selectOneMenu>
+					<f:facet	name="footer">
+						<h:panelGroup	style="display:block; text-align:center">				
+								<p:commandButton	id="regcita"	
+													value="Registrar Cita"	
+													actionListener="#{message.showMessage(6)}"
+													delay="2000"	
+													update="@widgetVar(msgs)"
+													oncomplete="PF('registroPanel').hide();"	>								
+							</p:commandButton>														
+						</h:panelGroup>
+					</f:facet>
+			</h:panelGrid>		
+		</p:dialog>			 
 </body>
 </html>

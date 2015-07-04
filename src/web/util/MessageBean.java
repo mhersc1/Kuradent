@@ -44,6 +44,9 @@ public class MessageBean implements Serializable{
 			break;
 		case 5:
 			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_FATAL," "+properties.getProperty("codigo_"+option)+" "," "));
+			break;
+		case 6:
+			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO," "+properties.getProperty("message_operacion_"+option)+" ",properties.getProperty("detail_operacion_"+option)));
 			break;			
 		}
 	}

@@ -40,7 +40,7 @@ public class HibernateUtil {
     	 */
     	Properties props=Util.getProperties("hibernate.properties");
     	
-/*    	String host=System.getenv("OPENSHIFT_MYSQL_DB_HOST");
+    	String host=System.getenv("OPENSHIFT_MYSQL_DB_HOST");
     	String port=System.getenv("OPENSHIFT_MYSQL_DB_PORT");    	
     	String username=System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
     	String password=System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
@@ -48,8 +48,8 @@ public class HibernateUtil {
     	props.setProperty("hibernate.connection.url", url);
     	props.setProperty("hibernate.connection.username", username);
     	props.setProperty("hibernate.connection.password", password);
-*/
-    	return props;
+
+		return props;
     }
     public static SessionFactory getSessionFactory() {
         return sessionFactory;

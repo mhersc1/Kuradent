@@ -32,5 +32,5 @@ public class HandlerMB {
 /*		NavigationHandler navigationHandler = context.getApplication().getNavigationHandler();
 		navigationHandler.handleNavigation(context, null, arg2);*/
 		
-	}
+	}	
 }
